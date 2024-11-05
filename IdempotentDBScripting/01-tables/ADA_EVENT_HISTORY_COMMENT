@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS `ADA_EVENT_HISTORY_COMMENT` (
+       `EVENT_HISTORY_COMMENT_ID` integer not null auto_increment,
+        `EVENT_HISTORY_ID` varchar(255),
+        `COMMENT` varchar(4000),
+        `IS_ACTIVE` bit,
+        `CREATED_BY` varchar(255),
+        `CREATED_ON` datetime(6),
+        `UPDATED_BY` varchar(255),
+        `UPDATED_ON` datetime(6),
+        primary key (`EVENT_HISTORY_COMMENT_ID`)
+    ) engine=InnoDB;
